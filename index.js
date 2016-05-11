@@ -3,7 +3,7 @@
 var mkdirp = require('mkdirp');
 
 // Where our data is going to be stored
-var DATA_DIR = './data/';
+var DATA_DIR = __dirname + '/data/';
 mkdirp.sync(DATA_DIR);
 
 var express = require('express');
