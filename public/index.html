@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>PouchBase</title>
+
+    <link rel="stylesheet" href="/style/pouchbase.css">
+
+  </head>
+
+  <body>
+
+    <section>
+      <h1>pouchbase</h1>
+
+      <p>PouchBase.com is a test server for PouchDB, it provides
+        open online databases that you can use to test PouchDB sync with.</p>
+
+      <p>Data stored here is publically available and is pediodically deleted,
+        please do not use for anything other than testing.</p>
+
+      <p class="url"><span>https://pouchbase.com/<span id="dbname"><span></span></p>
+
+      <p>Is your database, it has a randomly generate name to
+        reduce the chances of someone else using it (although that is always
+        possible).</p>
+    </section>
+
+    <footer>
+      <a href="https://github.com/daleharvey/pouchbase">GitHub</a>
+    </footer>
+
+    <script>
+      document.getElementById('dbname').innerText =
+        ('0000' + (Math.random() * Math.pow(36, 4) << 0).toString(36)).slice(-4);
+    </script>
+
+  </body>
+</html>
